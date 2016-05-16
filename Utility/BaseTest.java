@@ -6,12 +6,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by Luke on 14/05/2016.
  */
-public abstract class BaseTest implements org.junit.BeforeClass{
+public abstract class BaseTest{
 
     public static WebDriver driver;
 
     public BaseTest(){
-        System.out.println(getClass().toString() + " invoked");
+        ;setup();
     }
 
     @BeforeClass
