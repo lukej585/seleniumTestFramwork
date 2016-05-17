@@ -3,19 +3,21 @@ import org.openqa.selenium.*;
 import utility.BaseTest;
 
 
-public class home extends pages {
+public class Home extends Pages {
 
     WebDriver driver;
 
-    public home(WebDriver driver){
+    public Home(WebDriver driver){
         this.driver = driver;
     }
 
-    public  void login(){
+    public void login(){
 
 
 
         driver.get("https://test.cpms.crncc.nihr.ac.uk/");
+
+        //TODO: fix
         findElement(By.xpath("nihr-login")).click();
     }
 }
