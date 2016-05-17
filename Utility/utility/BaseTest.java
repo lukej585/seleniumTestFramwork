@@ -1,3 +1,5 @@
+package utility;
+
 import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.junit.Test;
@@ -6,16 +8,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by Luke on 14/05/2016.
  */
-public abstract class BaseTest{
+public class BaseTest{
 
     public static WebDriver driver;
 
     public BaseTest(){
-        ;setup();
+        //driver = new FirefoxDriver();
+        //setup1();
     }
 
-    @BeforeClass
-    public static void setup(){
+
+    public static void setup1(){
 
         driver = new FirefoxDriver();
 
@@ -27,11 +30,12 @@ public abstract class BaseTest{
 
 
     //TODO: implement find that uses the driver
-    public WebElement findElement(By by){
 
-        //WebElement element =
+    public static WebElement findElement(By by){
 
-        return null;
+        WebElement element = driver.findElement(by);
+
+        return element;
     }
 
 

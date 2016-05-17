@@ -1,21 +1,31 @@
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.home;
+import utility.BaseTest;
+import org.junit.BeforeClass;
+//import static pages.home.login;
+import static pages.home.*;
 
 
-public abstract class Sample extends BaseTest{
+public class Sample extends BaseTest {
 
-    public Sample(){
+   public static WebDriver driver;
+    static home home;
 
+
+
+    @BeforeClass
+    public static void setup(){
+        driver = new FirefoxDriver();
+        driver.get("https://test.cpms.crncc.nihr.ac.uk/");
     }
 
-    public static void main (String [] args){
-
-
-
-
-
-        System.out.println("hell");
+    @Test
+    public void test1(){
+        home = new home(driver);
     }
+
 
 
 
