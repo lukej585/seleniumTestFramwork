@@ -11,8 +11,5 @@ public class pages extends BaseTest{
 
     }
 
-    public pages(WebDriver driver){
-
-
-    }
+    
 }
