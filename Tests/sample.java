@@ -17,16 +17,10 @@ public class Sample extends BaseTest {
 
 
 
-    @BeforeClass
-    public static void setup(){
-        driver = new FirefoxDriver();
-        //driver.get("https://test.cpms.crncc.nihr.ac.uk/");
-    }
-
     @Test
     public void test1(){
         home = new Home(driver);
-        home.login();
+        //home.login(driver);
 
     }
 

@@ -4,6 +4,7 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.junit.Test;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.Home;
 
 
 public class BaseTest{
@@ -18,7 +19,13 @@ public class BaseTest{
     @BeforeClass
     public static void setup(){
         driver = new FirefoxDriver();
+        driver.manage().window().maximize();
         driver.get("https://test.cpms.crncc.nihr.ac.uk/");
+
+        Home.login();
+
+        //driver.findElement(By.xpath("//a[@id='nihr-login']")).click();
+
     }
 
 
