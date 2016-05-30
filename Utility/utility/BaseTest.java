@@ -4,6 +4,7 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.junit.Test;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.GlobalNavigation;
 import pages.Home;
 
 
@@ -30,9 +31,9 @@ public class BaseTest{
 
 
 
-    public static WebDriver getDriver(){
-        return driver;
-    }
+//    public static WebDriver getDriver(){
+//        return driver;
+//    }
 
 
     //TODO: implement find that uses the driver

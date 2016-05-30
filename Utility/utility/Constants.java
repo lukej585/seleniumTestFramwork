@@ -5,6 +5,6 @@ package utility;
  */
 public class Constants {
 
-    public final String SystemUsername = "cpms.testautomation@nihr.ac.uk";
-    public final String SystemPassword = "AMHa9*>Y";
+    public static final String SystemUsername = "cpms.testautomation@nihr.ac.uk";
+    public static final String SystemPassword = "AMHa9*>Y";
 }

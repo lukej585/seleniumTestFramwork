@@ -20,7 +20,7 @@ public class Sample extends BaseTest {
     @Test
     public void test1(){
         home = new Home(driver);
-        //home.login(driver);
+        System.out.println("hello");
 
     }
 
