@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pages.Home;
@@ -21,6 +22,7 @@ public class Sample extends BaseTest {
     public void test1(){
         home = new Home(driver);
         System.out.println("hello");
+
 
     }
 

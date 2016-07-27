@@ -8,6 +8,7 @@ import pages.GlobalNavigation;
 import pages.Home;
 
 
+
 public class BaseTest{
 
     public static WebDriver driver;
@@ -19,6 +20,8 @@ public class BaseTest{
 
     @BeforeClass
     public static void setup(){
+
+        CPMSApi.callAPI();
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://test.cpms.crncc.nihr.ac.uk/");
